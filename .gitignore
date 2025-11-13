@@ -25,4 +25,12 @@ wp-config.php
 .svn/
 .env
 
+# Additional core files to ignore (keep repo focused on wp-content)
+wp-*.php
+xmlrpc.php
+readme.html
+license.txt
+index.php
+.htaccess
+
 
