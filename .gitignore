@@ -1,0 +1,28 @@
+# OS / IDE
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+
+# Composer / Node (if added later)
+vendor/
+node_modules/
+
+# WordPress core (not versioned here)
+wp-admin/
+wp-includes/
+*.log
+
+# Uploads (optional; uncomment to ignore media)
+# wp-content/uploads/
+
+# Cache
+wp-content/cache/
+wp-content/upgrade/
+
+# Env / keys
+wp-config.php
+.svn/
+.env
+
+

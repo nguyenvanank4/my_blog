@@ -1,0 +1,41 @@
+.﻿/* Featured Posts plugin styles
+   Purpose: layout the featured posts grid and simple card styling.
+   This grid is flexible to different counts via auto-fit columns. */
+.fp-featured-posts {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+	gap: 16px;
+}
+.fp-post {
+	border: 1px solid #e5e7eb;
+	border-radius: 8px;
+	overflow: hidden;
+	background: #fff;
+}
+.fp-thumb img {
+	width: 100%;
+	height: auto;
+	display: block;
+}
+.fp-content {
+	padding: 12px 14px;
+}
+.fp-title {
+	margin: 0 0 8px;
+	font-size: 1.05rem;
+}
+.fp-title a {
+	text-decoration: none;
+	color: #111827;
+}
+.fp-title a:hover {
+	text-decoration: underline;
+}
+.fp-excerpt {
+	margin: 0;
+	color: #4b5563;
+	font-size: 0.95rem;
+	line-height: 1.4;
+}
+
+

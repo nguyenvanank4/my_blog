@@ -1,0 +1,117 @@
+/*
+Theme Name: myblog-theme
+Theme URI: https://example.com
+Author: You
+Description: Minimal responsive blog theme with AJAX Load More.
+Version: 1.0.0
+Text Domain: myblog-theme
+*/
+
+:root {
+	/* Theme base variables, used throughout layout and components. */
+	--container: 1100px;
+	--accent: #005bbb;
+	--text: #111827;
+	--muted: #6b7280;
+	--bg: #ffffff;
+}
+
+:root {
+	--container: 1100px;
+	--accent: #005bbb;
+	--text: #111827;
+	--muted: #6b7280;
+	--bg: #ffffff;
+}
+
+* { box-sizing: border-box; }
+body {
+	margin: 0;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+	color: var(--text);
+	background: #f8fafc;
+}
+
+.container {
+	max-width: var(--container);
+	margin: 0 auto;
+	padding: 0 16px;
+}
+
+.site-header {
+	background: var(--bg);
+	border-bottom: 1px solid #e5e7eb;
+	position: sticky;
+	top: 0;
+	z-index: 10;
+}
+.site-header .branding {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 16px 0;
+}
+.site-title {
+	margin: 0;
+	font-size: 1.5rem;
+}
+.site-title a {
+	color: var(--text);
+	text-decoration: none;
+}
+.site-nav a {
+	color: var(--text);
+	text-decoration: none;
+	margin-left: 16px;
+}
+.site-nav a:hover { color: var(--accent); }
+
+.layout {
+	display: grid;
+	grid-template-columns: 1fr 320px;
+	gap: 24px;
+	margin-top: 24px;
+}
+@media (max-width: 900px) {
+	.layout { grid-template-columns: 1fr; }
+}
+
+.post-list .post {
+	background: var(--bg);
+	border: 1px solid #e5e7eb;
+	border-radius: 8px;
+	padding: 16px;
+	margin-bottom: 16px;
+}
+.post .post-title { margin: 0 0 8px; font-size: 1.3rem; }
+.post .post-meta { color: var(--muted); font-size: 0.9rem; margin-bottom: 10px; }
+.post .post-excerpt { margin: 0; }
+
+.load-more-wrap { text-align: center; margin: 24px 0 48px; }
+#load-more {
+	background: var(--accent);
+	color: #fff;
+	border: none;
+	padding: 10px 16px;
+	border-radius: 6px;
+	cursor: pointer;
+	font-size: 1rem;
+}
+#load-more[disabled] {
+	opacity: 0.6;
+	cursor: not-allowed;
+}
+
+.site-footer {
+	margin-top: 48px;
+	border-top: 1px solid #e5e7eb;
+	background: var(--bg);
+}
+.site-footer .container {
+	padding: 20px 0;
+	font-size: 0.95rem;
+	color: var(--muted);
+	text-align: center;
+}
+
+
